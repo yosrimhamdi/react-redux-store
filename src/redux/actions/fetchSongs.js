@@ -6,18 +6,16 @@ const fetchSongs = () => async dispatch => {
 
   dispatch({
     type: FETCH_SONGS,
-    payload: {
-      songs: [
-        {
-          title: 'the great song 1',
-          length: '8:00',
-        },
-        {
-          title: 'the great song 2',
-          length: '1:00',
-        },
-      ],
-    },
+    payload: [
+      {
+        title: 'the great song 1',
+        length: '8:00',
+      },
+      {
+        title: 'the great song 2',
+        length: '1:00',
+      },
+    ],
   });
 };
 
